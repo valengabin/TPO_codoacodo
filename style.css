@@ -109,3 +109,33 @@ section {
     grid-column-start: 1;
     grid-column-end: 3;
 }
+
+h2{
+    text-align: center;
+}
+
+
+section {
+    display: flex;        
+            align-items: stretch;
+            column-gap: 15px;
+            padding: 25px;
+            flex: 12;
+            margin: 20px;
+}
+
+section article p{
+    text-align: stretch;
+}
+
+.iframe{
+    display: grid;
+    justify-content: flex-end;
+   
+
+}
+
+footer{
+    background-color: bisque;
+    
+}
