@@ -1,141 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Roboto:wght@100;300;500;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
+    font-family: 'Roboto', sans-serif;
     background-image: url(https://images.pexels.com/photos/680959/pexels-photo-680959.jpeg);
-    color: #3a5707;
-    font-weight: bold;
 }
 
-
-nav {
-    background-color: #c39dae;
-    position: sticky;
-    top: 0;
-    opacity: 0.4;
-}
-
-nav:hover {
-    opacity: 1;
-}
-
-nav ul {
-    display: flex; /* así se indica que es un flex container */ 
-
-    flex-wrap: wrap; /*Se utiliza para que los elementos wrapeen (se acomoden hacia abajo, si exceden en tamaño al viewport).Se utiliza para eliminar el scrolleo horizontal. */
-
-    /*flex-flow: row wrap */ /*Es una propiedad shorthand para flex-wrap: y flex-direction: */
-
-
-    flex-direction: row; /* los elementos fluyen hacia la derecha, es como viene predeterminado. Ahora toma esta última, porque al estar escrito debajo es la prioridad en css */
-    
-    justify-content: space-evenly;            
-    
-    list-style-type: none;
-
+.nav-bar {
+    background-color: rgba(195, 157, 174, 1);
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
     align-items: center;
-
-    padding: 15px;
-
-    height: 30px;
-
-    transition: 0.2s all;
-    color: #5a9f63;
-
 }
 
-nav ul:hover {
-
-    height: 50px;
-
+.nav-bar .logo {
+    font-size: 60px;
+    color: #307610;
+    grid-column: 2/3;
 }
 
+.nav-bar .menu {
+    grid-column: 4/7;
+    display: flex;
+    justify-content: space-around;
+    
+}
 
-nav ul li a {
+.nav-bar .menu li {
+    list-style: none;
+}
+
+.nav-bar .menu a {
     text-decoration: none;
-    display: inline-block;
+    color: #307610;
+}
 
-    display: block;
-    width: 150px;
-    height: 100%;
- 
-
-    background-color: #aca5be;
+.nav-bar .menu-bar {
+    display: none;
     color: #307610;
 
-    border-radius: 5px;
-    padding: 5px;
-
-    transition: 0.4s all;
-}
-
-nav ul li a:hover {
-
-    background-color: #f2a2f2;
-    color: #307610;
-    border-radius: 10px;
-    
-
-}
-
-section {
-    background-color: bisque;
-    border: 1px solid rgb(170, 168, 168);
-    display: grid;
-    /*grid-template-columns: 0.5fr 1fr 2fr 1fr;*/
-    grid-template-columns: repeat(4, 1fr); 
-    /*grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));*/
-    grid-template-rows: 1fr 1fr;
-    /*grid-template: 1fr 100px / 0.5fr 1fr 2fr 1fr;*/
-    column-gap: 10px;
-    row-gap: 10px;
-    justify-content: center;
-    align-items: center;
-
-    color: #3a5707;
-}
-
-.grid-item {
-    background-color: coral;
-    border: 1px solid rgb(212, 212, 212);
-    /*width: 50px;
-    height: 50px;*/
-    display:flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.grid-item-especial {
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-
-h2{
-    text-align: center;
-}
-
-
-section {
-    display: flex;        
-            align-items: stretch;
-            column-gap: 15px;
-            padding: 25px;
-            flex: 12;
-            margin: 20px;
-}
-
-section article p{
-    text-align: stretch;
-}
-
-.iframe{
-    display: grid;
-    justify-content: flex-end;
-   
-
-}
-
-footer{
-    background-color: bisque;
-    
 }
