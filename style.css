@@ -1,0 +1,106 @@
+body {
+    background-color: #ee91c3;
+    color: #3a5707;
+}
+
+nav {
+    background-color: aquamarine;
+    position: sticky;
+    top: 0;
+    opacity: 0.3;
+}
+
+nav:hover {
+    opacity: 1;
+}
+
+nav ul {
+    display: flex; /* así se indica que es un flex container */ 
+
+    flex-wrap: wrap; /*Se utiliza para que los elementos wrapeen (se acomoden hacia abajo, si exceden en tamaño al viewport).Se utiliza para eliminar el scrolleo horizontal. */
+
+    /*flex-flow: row wrap */ /*Es una propiedad shorthand para flex-wrap: y flex-direction: */
+
+    flex-direction: column; /* los elementos fluyen hacia abajo */ 
+
+    flex-direction: row; /* los elementos fluyen hacia la derecha, es como viene predeterminado. Ahora toma esta última, porque al estar escrito debajo es la prioridad en css */
+    
+    justify-content: space-evenly;            
+    
+    list-style-type: none;
+
+    align-items: center;
+
+    padding: 15px;
+
+    height: 30px;
+
+    transition: 0.2s all;
+
+}
+
+nav ul:hover {
+
+    height: 50px;
+
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    display: inline-block;
+    width: 150px;
+    height: 100%;
+ 
+
+    background-color: coral;
+    color: white;
+
+    border-radius: 15px;
+
+    transition: 0.2s all;
+}
+
+nav ul li a:hover {
+
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    
+
+}
+
+section {
+    background-color: bisque;
+    border: 1px solid rgb(170, 168, 168);
+    display: grid;
+    /*grid-template-columns: 0.5fr 1fr 2fr 1fr;*/
+    grid-template-columns: repeat(4, 1fr); 
+    /*grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));*/
+    grid-template-rows: 1fr 1fr;
+    /*grid-template: 1fr 100px / 0.5fr 1fr 2fr 1fr;*/
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+    color: #3a5707;
+}
+
+.grid-item {
+    background-color: coral;
+    border: 1px solid rgb(212, 212, 212);
+    /*width: 50px;
+    height: 50px;*/
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.grid-item-especial {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
