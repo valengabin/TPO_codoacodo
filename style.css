@@ -45,3 +45,108 @@ body {
     color: #307610;
 
 }
+
+section {
+    background-color: rgba(255, 298, 196, 1); 
+    border: 1px solid rgb(170, 168, 168);
+    display: grid;
+    /*grid-template-columns: 0.5fr 1fr 2fr 1fr;*/
+    grid-template-columns: repeat(4, 1fr); 
+    /*grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));*/
+    grid-template-rows: 1fr 1fr;
+    /*grid-template: 1fr 100px / 0.5fr 1fr 2fr 1fr;*/
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    
+    color: #3a5707;
+    }
+    
+    .grid-item {
+    background-color: coral;
+    border: 1px solid rgb(212, 212, 212);
+    /*width: 50px;
+    
+    height: 50px;*/
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    }
+    
+    .grid-item-especial {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    }
+    
+    
+     h2{
+       display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    
+    section {
+        display: flex;        
+                align-items: stretch;
+                column-gap: 15px;
+                padding: 20px;
+                flex: 12;
+                margin: 20px;
+                opacity: 0.6;
+    }
+    
+    section article p{
+        text-align: stretch;
+    }
+    
+    .iframe{
+        display: grid;
+        justify-content: flex-end;
+        padding: 20px;
+    }
+    
+    
+    footer{
+        text-align: center;
+        color: white;
+        background-color: #c39dae;
+        
+    }
+    
+    p{
+        font-size: 20px;
+        text-align: left;
+        padding: 20px;
+        
+    }
+    
+    .container-main{
+        justify-content: flex-start;
+        margin-right: 50px;
+    }
+    
+    figure{
+        justify-content: center;
+    }
+    
+    li{
+        margin-top: 45px;
+        font-size: 20px;
+        font-weight: bold;;
+    }
+    
+    *{
+        font-family: sans-serif;
+    }
+    
+    h1{
+        font-family: 'Oleo Script Swash Caps', cursive;;
+        text-align: center;
+        font-size: 70px;
+    }
+
