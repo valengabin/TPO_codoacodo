@@ -1,11 +1,12 @@
 body {
     background-image: url(https://images.pexels.com/photos/680959/pexels-photo-680959.jpeg);
     color: #3a5707;
+    font-weight: bold;
 }
 
 
 nav {
-    background-color: #c42c91;
+    background-color: #c39dae;
     position: sticky;
     top: 0;
     opacity: 0.4;
