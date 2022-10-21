@@ -1,13 +1,14 @@
 body {
-    background-color: #ee91c3;
+    background-image: url(https://images.pexels.com/photos/680959/pexels-photo-680959.jpeg);
     color: #3a5707;
 }
 
+
 nav {
-    background-color: aquamarine;
+    background-color: #c42c91;
     position: sticky;
     top: 0;
-    opacity: 0.3;
+    opacity: 0.4;
 }
 
 nav:hover {
@@ -21,7 +22,6 @@ nav ul {
 
     /*flex-flow: row wrap */ /*Es una propiedad shorthand para flex-wrap: y flex-direction: */
 
-    flex-direction: column; /* los elementos fluyen hacia abajo */ 
 
     flex-direction: row; /* los elementos fluyen hacia la derecha, es como viene predeterminado. Ahora toma esta última, porque al estar escrito debajo es la prioridad en css */
     
@@ -36,6 +36,7 @@ nav ul {
     height: 30px;
 
     transition: 0.2s all;
+    color: #5a9f63;
 
 }
 
@@ -49,23 +50,26 @@ nav ul:hover {
 nav ul li a {
     text-decoration: none;
     display: inline-block;
+
+    display: block;
     width: 150px;
     height: 100%;
  
 
-    background-color: coral;
-    color: white;
+    background-color: #aca5be;
+    color: #307610;
 
-    border-radius: 15px;
+    border-radius: 5px;
+    padding: 5px;
 
-    transition: 0.2s all;
+    transition: 0.4s all;
 }
 
 nav ul li a:hover {
 
-    background-color: black;
-    color: white;
-    border-radius: 5px;
+    background-color: #f2a2f2;
+    color: #307610;
+    border-radius: 10px;
     
 
 }
