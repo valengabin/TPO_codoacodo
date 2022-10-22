@@ -1,9 +1,11 @@
 
 let menu = document.querySelector('#menu')
 
-let menu-bar = document.querySelector('#menu-bar')
+let menubar = document.querySelector('#menubar')
 
-menu - bar.addEventListner('click', function () {
-    menu.classList.toggle('menu-toggle');
+
+menubar.addEventListener('click', function () {
+    menu.classList.toggle('menutoggle');
 
 })
+
