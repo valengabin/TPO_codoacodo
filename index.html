@@ -79,22 +79,26 @@
             </div>
         </section>
 
-        <section id="Contacto">
+       <section id="Contacto">
             <div class="container-main">
             <h2>Contacto</h2>
-            <p><form action="../form-result.php" target="_blank">
+                 <p>¿Le pareció interesante la información? <br>
+                A través de este formulario puedes enviarme un mensaje.</p>
+            <form action="../../form-result.php" target="_blank">
+                <fieldset>
+                <legend>Mensaje</legend>
+                <p><label>Tu nombre: <input type="text" name="nombre"></label></p>
+                <p><label>Tu dirección de correo: <input type="text" name="correo"></label></p>
+                <p> <label>Tu mensaje:<br>
+                <textarea name="mensaje"></textarea>
+                </label>
+                </p>
+                </fieldset>
                 <p>
-                <p>¿Le parecio interesante la información?</p>
-                        <label>
-    	                <input type="checkbox" name="Si" value="Si">Si</label>
-                    <label>
-    	            <input type="checkbox" name="No" value="No">No</label>
-                    <br>
-                    Si desea puede dejarnos un mensaje: <textarea name="mensaje"></textarea>
-                
-                  </p><input type="submit" value="Enviar la información"></p>
-              
-              </form></p>
+                <input type="submit" value="Enviar mensaje">
+                 <input type="reset" value="Comenzar de nuevo">
+                 </p>
+                 </form>
             </div>
         </section>
      </main>
