@@ -4,7 +4,7 @@
         position: relative;
     }
 
-    .nav-bar .menu-bar {
+    .nav-bar .menubar {
         display: block;
         grid-column: 8/9;
         font-size: 2em;
@@ -18,11 +18,26 @@
         align-items: center;
         background-color: rgba(195, 157, 174, 1);
         margin-top: 38em;
-        transform: translateX(200%);
+        transform: translateX(170%);
+        transition: all 1s;
     }
 
-    .nav-bar .menu-toggle {
+    .nav-bar .menu a {
+        font-size: 3em;
+    }
+
+    .nav-bar .menutoggle {
         transform: translateX(0%);
+    }
+
+
+    .hero h2 {
+            font-size: 3em;
+    }
+
+    .hero p {
+        font-weight: 100;
+
     }
 
 }
