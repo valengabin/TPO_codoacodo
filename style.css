@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+
+
+
+
 body {
     font-family: 'Roboto', sans-serif;
     background-image: url(https://images.pexels.com/photos/680959/pexels-photo-680959.jpeg);
@@ -17,6 +21,8 @@ body {
     grid-template-columns: repeat(8, 1fr);
     align-items: center;
 }
+
+
 
 .nav-bar .logo {
     font-size: 60px;
@@ -52,6 +58,8 @@ body {
 
 
 /* SECTION MAIN*/
+
+
 
 .hero {
     height: 80vh;
@@ -106,6 +114,7 @@ body {
     font-weight: 300;
     font-family: 'Montserrat';
 }
+
 
 
 
