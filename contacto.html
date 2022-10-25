@@ -20,26 +20,28 @@
     <main class="hero">
         
         
-        <div class="infocontent4" id="Contacto">
+        <div class="infocontent4" action="post" id="Contacto">
             <h2>Contacto </h2>
                      <p>¿Le pareció interesante la información? <br>
                     A través de este formulario puedes enviarme un mensaje.</p>
-                <form action="../../form-result.php" target="_blank">
+                <form id="form">
                     <fieldset>
                     <legend>Mensaje</legend>
-                    <p><label>Tu nombre: <input type="text" name="nombre"></label></p>
-                    <p><label>Tu dirección de corre
-    o: <input type="text" name="correo"></label></p>
+                    <p><label>Tu nombre: <input type="text" name="nombre" required></label></p>
+                    <p><label>Tu dirección de correo: <input type="text" name="correo" required></label></p>
+                    <p><label>Motivo: <input type="text" name="motivo" required></label></p>
                     <p> <label>Tu mensaje:<br>
-                    <textarea name="mensaje"></textarea>
+                    <textarea name="mensaje" required></textarea>
                     </label>
                     </p>
                     </fieldset>
                     <p>
-                    <input type="submit" value="Enviar mensaje">
+                    <input type="submit" value="Enviar mensaje" id="button">
                      <input type="reset" value="Comenzar de nuevo">
                      </p>
-                     </form>
+                </form>
+                <a href="mailto:avilasofia076@gmail.com" id="mail"> </a>
+
              
         </div>
 
@@ -47,10 +49,13 @@
 
     </main>
 
-    <footer></footer>
+    <footer> </footer>
 
     <script src="script.js"></script>
     <script src="javaScript/index.js"> </script>
+    <script src= "javaScript/validaciones_contacto.js"> </script>
+   
+    
     
 </body>
 </html>
