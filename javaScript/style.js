@@ -15,3 +15,7 @@ var cad=`<nav class="nav-bar">
 </nav>
 `
 document.getElementById('idHeader').innerHTML= cad;
+
+cad=`<h3 class="autores"> Codo a codo | 2022 </h3>`
+
+document.getElementById('idFooter').innerHTML=cad;
