@@ -28,6 +28,9 @@ const $form = document.querySelector('#form' )
                     warnings += `<br/>Especifique un motivo\n`
                     invalido=true    
                 }
+                if (mensaje.value.length <= 1){
+                    warnings += `<br/> Ingrese un mensaje`
+                }
     
                 if (invalido){
                     parrafo.innerHTML= warnings
