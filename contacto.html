@@ -24,29 +24,19 @@
             <h2>Contacto </h2>
                      <p>¿Le pareció interesante la información? <br>
                     A través de este formulario puedes enviarme un mensaje.</p>
-                <form id="form">
-                    <fieldset>
-                    <legend>Mensaje</legend>
-                    <p><label>Tu nombre: <input type="text" id="nombre" name="nombre" required></label></p>
-                    
-                    <p><label>Tu dirección de correo: <input type="text" id="correo" name="correo" required></label></p>
-                    
-                    <p><label>Motivo: <input type="text" id="motivo" name="motivo" required></label></p>
-                    
-                    <p> <label>Tu mensaje:<br>
-                    <textarea name="mensaje" id="mensaje" required></textarea>
-                    </label>
-                    
-                    </p>
-                    </fieldset>
-                    <p>
-                    <div class="error"> </div>    
-                    <input type="submit" value="Enviar mensaje" id="button">
-                     <input type="reset" value="Comenzar de nuevo">
-                     <p class="warnings" id="warnings"> </p>
-                     </p>
-                </form>
-                <a href="mailto:avilasofia076@gmail.com" id="mail"> </a>
+            <form id="form" class="topBefore">
+		
+                <input id="nombre" type="text" placeholder="Nombre">
+                <input id="correo" type="text" placeholder="nombre@mail.com">
+                <input id="motivo" type="text" placeholder="Motivo">
+                <textarea id="mensaje" type="text" placeholder="Mensaje"></textarea>
+        <input id="submit" type="submit" value="Enviar">
+        <input id="submit" type="reset" value="Comenzar de nuevo">
+        <p class="warnings" id="warnings"> </p>
+        <a href="mailto:avilasofia076@gmail.com" id="mail"> </a>
+        
+      
+                
 
              
         </div>
@@ -58,7 +48,7 @@
     <footer> </footer>
 
     <script src="script.js"></script>
-    <script src="javaScript/index.js"> </script>
+    <script src="javaScript/style.js"> </script>
     <script src="javaScript/validaciones_contacto.js"> </script>
    
     

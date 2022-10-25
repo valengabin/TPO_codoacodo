@@ -15,17 +15,17 @@ const $form = document.querySelector('#form' )
                 let invalido= false
                 parrafo.innerHTML= ""
                 if (nombre.value.length < 1) {
-                    warnings += `Por favor ingrese su nombre completo`
+                    warnings += `Ingrese su nombre completo\n`
                     invalido=true    
                 }
     
                 if (! ValidateEmail(correo)){
-                    warnings += `Por favor ingrese un mail válido`
+                    warnings += `<br/>Ingrese un mail válido\n`
                     invalido=true
                 }
     
                 if (motivo.value.length <= 1){
-                    warnings += `Por favor, especifique un motivo`
+                    warnings += `<br/>Especifique un motivo\n`
                     invalido=true    
                 }
     
