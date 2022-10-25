@@ -27,17 +27,23 @@
                 <form id="form">
                     <fieldset>
                     <legend>Mensaje</legend>
-                    <p><label>Tu nombre: <input type="text" name="nombre" required></label></p>
-                    <p><label>Tu dirección de correo: <input type="text" name="correo" required></label></p>
-                    <p><label>Motivo: <input type="text" name="motivo" required></label></p>
+                    <p><label>Tu nombre: <input type="text" id="nombre" name="nombre" required></label></p>
+                    
+                    <p><label>Tu dirección de correo: <input type="text" id="correo" name="correo" required></label></p>
+                    
+                    <p><label>Motivo: <input type="text" id="motivo" name="motivo" required></label></p>
+                    
                     <p> <label>Tu mensaje:<br>
-                    <textarea name="mensaje" required></textarea>
+                    <textarea name="mensaje" id="mensaje" required></textarea>
                     </label>
+                    
                     </p>
                     </fieldset>
                     <p>
+                    <div class="error"> </div>    
                     <input type="submit" value="Enviar mensaje" id="button">
                      <input type="reset" value="Comenzar de nuevo">
+                     <p class="warnings" id="warnings"> </p>
                      </p>
                 </form>
                 <a href="mailto:avilasofia076@gmail.com" id="mail"> </a>
@@ -53,7 +59,7 @@
 
     <script src="script.js"></script>
     <script src="javaScript/index.js"> </script>
-    <script src= "javaScript/validaciones_contacto.js"> </script>
+    <script src="javaScript/validaciones_contacto.js"> </script>
    
     
     

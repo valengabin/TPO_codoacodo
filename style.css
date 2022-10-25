@@ -115,7 +115,14 @@ body {
     font-family: 'Montserrat';
 }
 
-
+.warnings {
+    width: 200px;
+    text-align: center;
+    margin:auto;
+    font-size: 5em;
+    color: #c42c91;
+    padding-top: 20px;
+}
 
 
 
