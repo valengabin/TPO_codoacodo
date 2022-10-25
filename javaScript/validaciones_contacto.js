@@ -38,9 +38,7 @@ const $form = document.querySelector('#form' )
                                     
                 else{
                     event.preventDefault()     
-                            console.log(nombre)
-                            console.log(motivo)
-                            console.log(mensaje)       
+                                  
                             $mail.setAttribute('href',`mailto: avilasofia076@gmail.com?subject=${form.get('nombre')}&{form.get('email')}&body=${form.get('mensaje')}`)
                             $mail.click()
                 }  
