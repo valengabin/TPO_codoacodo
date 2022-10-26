@@ -361,4 +361,10 @@ footer .autores{
 
 }
 
+.animado{
+  opacity: 0;
+  transtition: all 0.5s;
+}
+
+
 
